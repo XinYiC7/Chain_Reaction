@@ -47,7 +47,7 @@ class Ball {
       move();
     }
     if (state == 1){
-      if (rad >= 100){
+      if (rad >= 150){
         state = 2;
       }
       rad += 1;
