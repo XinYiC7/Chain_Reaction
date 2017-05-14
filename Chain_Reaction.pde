@@ -1,3 +1,10 @@
+/*
+Team ROLLING PANCAKE: Xin Yi Chen, Aryan Bhatt
+APCS2 pd4
+HW40 -- All That Bouncin'
+2017-05-14
+*/
+
 Ball[] balls;
 
 boolean reactionStarted;
