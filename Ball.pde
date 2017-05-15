@@ -19,8 +19,8 @@ class Ball {
     y = (int)random(height-rad/2);
     rad = 20;
     c = color((int)random(256), (int)random(256), (int)random(256));
-    dx = random(5) - 2.5;
-    dy = random(5) - 2.5;
+    dx = (random(2)+1) * ((((int) random(2)) * 2) - 1) / 2;
+    dy = (random(2)+1) * ((((int) random(2)) * 2) - 1) / 2;
     state = 0;
   }
   
