@@ -19,8 +19,8 @@ class Ball {
     y = (int)random(height-rad/2);
     rad = 20;
     c = color((int)random(256), (int)random(256), (int)random(256));
-    dx = (int)random(8) - 4;
-    dy = (int)random(8) -4;
+    dx = random(5) - 2.5;
+    dy = random(5) - 2.5;
     state = 0;
   }
   
@@ -42,7 +42,7 @@ class Ball {
     }
   }
   boolean isTouching(Ball ball){
-    if ((rad + ball.rad) > (sqrt(pow((x - ball.x),2)+pow((y - ball.y),2)))){
+    if ((rad + ball.rad) >= 2 * (sqrt(pow((x - ball.x),2)+pow((y - ball.y),2)))){
       if (ball.state == 1 || ball.state == 2){
         return true;
       }
@@ -58,6 +58,8 @@ class Ball {
         state = 2;
       }
       rad += 1;
+      dx = 0;
+      dy = 0;
     }
     if (state == 2){
       if (rad <= 0){

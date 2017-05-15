@@ -25,7 +25,7 @@ void draw(){
     fill(a.c);
     a.move();
     for(Ball b : balls){
-      if (a!= b && a.state == 0){
+      if (a != b && a.state == 0){
         if(a.isTouching(b)){
           a.state = 1;
         }
